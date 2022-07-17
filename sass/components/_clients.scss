@@ -1,0 +1,30 @@
+.clients__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $nets-color;
+    border-color: $nets-color;
+    border-radius: 4px;
+    color: $nets-color;
+
+    transition: color $time $timing, border-color $time $timing;
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+        color: $accent-color;
+    }
+}
+
+.clients__icon {
+    fill: currentColor;
+}
+
+.clients__list {
+    display: flex;
+    justify-content: space-between;
+
+}
+

@@ -1,0 +1,92 @@
+.footer {
+    background-color: $bgc;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.contacts__item:last-child {
+    margin-bottom: 0;
+}
+
+.contacts__adress,
+.contacts__mail,
+.contacts__tel {
+    font-family: inherit;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.contacts__adress {
+    color: $white-color;
+
+}
+
+.contacts__mail,
+.contacts__tel {
+    color: $white-alfa-color;
+
+    transition: color $time $timing;
+}
+
+.contacts__mail:hover,
+.contacts__mail:focus,
+.contacts__tel:hover,
+.contacts__tel:focus {
+    color: $white-color;
+}
+
+.slogan {
+    width: 206px;
+    margin-left: 70px;
+}
+
+.slogan__text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+
+}
+
+.footer-nets {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-nets__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $white-color;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color $time $timing;
+}
+
+.footer-nets__link:hover,
+.footer-nets__link:focus {
+    color: $white-color;
+    background-color: $accent-color;
+}
+
+.footer-nets__icon {
+    fill: currentColor;
+}

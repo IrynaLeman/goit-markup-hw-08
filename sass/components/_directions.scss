@@ -1,0 +1,52 @@
+.portfolio-section {
+    padding-top: 0;
+}
+
+.directions__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.directions__img {
+    max-width: 100%;
+}
+
+.directions__item {
+    position: relative;
+
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+
+.directions__text {
+    $direction-bgc: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: inherit;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: $direction-bgc;
+}
+
+/*Заголовки h2*/
+.section__title {
+    margin-bottom: 50px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}

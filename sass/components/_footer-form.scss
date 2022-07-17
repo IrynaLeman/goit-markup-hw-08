@@ -1,0 +1,52 @@
+.sign-form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+}
+.footer-form {
+    display: flex;
+    margin-left: auto;
+    align-items: flex-end;
+
+    &__label {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.12;
+        text-transform: uppercase;
+        color: $white-color;
+    }
+    &__input {
+        width: 358px;
+        height: 50px;
+        background-color: $hero-color;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        padding: 15px 16px;
+        color: $white-color;
+    
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+    }
+
+    &__input::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: $white-alfa-color;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        padding: 10px 28px 10px 29px;
+        height: 50px;
+    }
+
+    &__icon {
+        margin-left: 10px;
+        fill: currentColor;
+    }
+}
