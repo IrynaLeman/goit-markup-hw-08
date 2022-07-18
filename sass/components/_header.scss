@@ -1,4 +1,8 @@
-/*Шапка*/
+.page-header {
+    border-bottom: 1px solid $header-line;
+}
+
+/*
 .page-header {
     border-bottom: 1px solid $header-line;
 
@@ -7,7 +11,7 @@
 }
 
 
-/*Навигация в шапке*/
+
 .site-nav {
     display: flex;
     align-items: center;
@@ -64,7 +68,7 @@
     background-color: $accent-color;
 }
 
-/*Контакты*/
+
 .header-contacts {
     display: flex;
     margin-left: auto;
@@ -92,3 +96,4 @@
     margin-right: 10px;
     fill: currentColor;
 }
+*/
