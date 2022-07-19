@@ -7,7 +7,7 @@
     background-image: linear-gradient(to right,
         $gradient-color,
         $gradient-color),
-        url(../images/hero.jpg);
+        url(../images/hero-480.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,11 +21,12 @@
     margin-top: 0;
     margin-bottom: 0;
     margin-bottom: 30px;
-
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
     font-family: inherit;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -37,4 +38,52 @@
     padding: 10px 32px;
     min-width: 200px;
     text-align: center;
+}
+
+@media (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(to right,
+                    $gradient-color,
+                    $gradient-color),
+                    url(../images/hero@2x-480.jpg);
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .hero {
+        background-image: linear-gradient(to right,
+            $gradient-color,
+            $gradient-color),
+            url(../images/hero-768.jpg);
+    }
+        @media (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(to right,
+                        $gradient-color,
+                        $gradient-color),
+                    url(../images/hero@2x-768.jpg);
+            }
+        }
+}
+
+@media screen and (min-width: $desktop) {
+    .hero {
+        background-image: linear-gradient(to right,
+                $gradient-color,
+                $gradient-color),
+            url(../images/hero-1200.jpg);
+        &__title {
+                font-size: 44px;
+                line-height: 1.36;
+            }
+    }
+
+    @media (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(to right,
+                    $gradient-color,
+                    $gradient-color),
+                url(../images/hero@2x-1200.jpg);
+        }
+    }
 }
