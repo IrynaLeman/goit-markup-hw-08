@@ -101,6 +101,37 @@ text-align: center;
     }
 }
 
+@media screen and (min-width: $desktop) {
+    .footer {
+        text-align: left;
+    }
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+    }
+    .contacts {
+        margin-bottom: 0;
+    }
+    .footer__contacts--tablet {
+        padding-left: 0;
+    }
+    .contacts__item {
+        text-align: left;
+    }
+
+    .contacts__item:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    .contacts__item:last-child {
+        margin-bottom: 0;
+    }
+    .slogan {
+        margin-left: 70px;
+    }
+
+}
+
 /*.footer {
     background-color: $bgc;
     padding-top: 60px;

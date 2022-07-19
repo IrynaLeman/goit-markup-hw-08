@@ -51,6 +51,33 @@
     }
 }
 
+@media screen and (min-width: $desktop) {
+    .sign-form {
+            display: flex;
+            flex-direction: column;
+            margin-right: 12px;
+        }
+    
+        .footer-form {
+            display: flex;
+            margin-left: auto;
+            align-items: flex-end;
+    
+            &__label {
+                margin-bottom: 20px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.12;
+                text-transform: uppercase;
+                color: $white-color;
+            }
+    
+            &__input {
+                width: 358px;
+                margin-bottom: 0;
+            }
+        }
+}
 /*
 .sign-form {
     display: flex;
