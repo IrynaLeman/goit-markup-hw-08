@@ -2,6 +2,109 @@
     background-color: $bgc;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
+}
+.contacts__item {
+text-align: center;
+}
+.footer__logo {
+    margin-bottom: 20px;
+}
+.contacts__adress,
+.contacts__mail,
+.contacts__tel {
+    font-family: inherit;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.contacts__adress {
+    color: $white-color;
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+.contacts {
+    margin-bottom: 60px;
+}
+.contacts__mail,
+.contacts__tel {
+    color: $white-alfa-color;
+
+    transition: color $time $timing;
+}
+
+.contacts__mail:hover,
+.contacts__mail:focus,
+.contacts__tel:hover,
+.contacts__tel:focus {
+    color: $white-color;
+}
+
+.slogan {
+    width: 206px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.slogan__text {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-color;
+}
+
+.footer-nets {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer-nets__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $white-color;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color $time $timing;
+}
+
+.footer-nets__link:hover,
+.footer-nets__link:focus {
+    color: $white-color;
+    background-color: $accent-color;
+}
+
+.footer-nets__icon {
+    fill: currentColor;
+}
+
+@media screen and (min-width: $tablet) {
+    .footer__contacts--tablet {
+        display: flex;
+        align-items: baseline;
+        padding-left: 76px;
+        justify-content: space-between;
+    }
+    .slogan {
+        margin-left: 165px;
+    }
+}
+
+/*.footer {
+    background-color: $bgc;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-container {
@@ -90,3 +193,4 @@
 .footer-nets__icon {
     fill: currentColor;
 }
+*/
