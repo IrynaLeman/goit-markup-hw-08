@@ -125,6 +125,27 @@
     }
 }
 
+@media screen and (min-width: $desktop) {
+    .agreement {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .agreement__label {
+        position: relative;
+        
+        margin-left: 7px;
+        font-size: 14px;
+        line-height: 1.71;
+    }
+    .agreement__link {
+        margin-left: 7px;
+        color: $accent-color;
+    }
+    .agreement__text {
+        padding-left: 23px;
+    }
+}    
+
 /*
 .agreement {
     margin-left: auto;

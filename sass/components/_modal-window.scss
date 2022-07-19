@@ -66,8 +66,16 @@
     color: $nav-color;
 }
 
+@media screen and (min-width: $desktop) {
+    .modal {
+        width: 528px;
+    }
+    .modal__text {
+        line-height: 1.15;
+    }
+}
 /*
-..modal {
+.modal {
     
     width: 528px;
 }
