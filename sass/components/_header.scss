@@ -2,6 +2,75 @@
     border-bottom: 1px solid $header-line;
 }
 
+.menu__open--icon {
+    fill: currentColor;
+}
+
+.site-nav__link,
+.header-contacts__link {
+    font-family: inherit;
+    color: $nav-color;
+
+    transition: color $time $timing;
+}
+@media screen and (max-width: 767px) {
+    .menu.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .page-header__container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .page-header {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .page-header__logo {
+        display: block;
+    }
+    .menu {
+        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $white-color;
+        width: 100%;
+        padding: 48px 40px;
+    }
+    .menu__open, .menu__close {
+        width: 40px;
+        height: 40px;
+        display: block;
+        padding: 0;
+        border: none;
+        outline: none;
+        color: $nav-color;
+        background-color: $white-color;
+        
+        }
+    .menu__open:focus, .menu__open:hover, .menu__close:focus, .menu__close:hover {
+        color: $accent-color;
+    }
+    
+    .menu__close {
+        position: absolute;
+        top:0;
+        right: 15px;
+        &:hover, &:focus {
+            color: $accent-color;
+        }
+    }
+      
+}
+
+@media screen and (min-width: $tablet) {
+    .menu__open, .menu__close {
+        display: none;
+    }
+}
 /*
 .page-header {
     border-bottom: 1px solid $header-line;
