@@ -26,6 +26,8 @@
     }
 }
 .header-contacts__link {
+    line-height: 1.17;
+    letter-spacing: 0.02em;
     color: $second-color;
 
     &:hover,
@@ -92,7 +94,7 @@
     
     .site-nav__link {
         font-size: 40px;
-        line-height: 47px;
+        line-height: 1.17;
     }
     .site-nav__item:not(:last-child) {
         margin-bottom: 32px;
@@ -166,7 +168,52 @@
     .social-names {
         display: none;
     }
+    .site-nav__link {
+        font-size: 14px;
+    }
+    .header-contacts__link {
+        font-size: 12px;
+        
+    }
+    .header-contacts__icon {
+        margin-right: 8px;
+    }
+    .header-contacts__icon--tel {
+        width: 10px;
+        height: 14px;    
+    }
+
+    .header-contacts__icon--mail {
+        width: 14px;
+        height: 10px;
+    }
+    .header-contacts__item:first-child {
+        margin-bottom: 10px;
+    }
+    .site-nav__list {
+        display: flex;
+        margin-right: 84px;
+    }
+    .site-nav__item:not(:last-child) {
+        margin-right: 50px;
+    }
+    .page-header__container {
+        display: flex;
+        padding-top: 21px;
+        padding-bottom: 21px;
+        align-items: center;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+
+    }
+    .page-header__logo {
+        margin-right: 88px;
+    }
+
 }
+
 /*
 .page-header {
     border-bottom: 1px solid $header-line;
