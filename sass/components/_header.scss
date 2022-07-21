@@ -6,13 +6,39 @@
     fill: currentColor;
 }
 
-.site-nav__link,
-.header-contacts__link {
+.site-nav__link {
     font-family: inherit;
     color: $nav-color;
+    font-weight: 500;
+    letter-spacing: 0.02em;
 
     transition: color $time $timing;
+    &:hover, &:focus {
+        color: $accent-color;
+    }
 }
+.site-nav__current {
+    color: $accent-color;
+
+    &:hover,
+    &:focus {
+        color: $nav-color;
+    }
+}
+.header-contacts__link {
+    color: $second-color;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.header-contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 @media screen and (max-width: 767px) {
     .menu.is-hidden {
         opacity: 0;
@@ -63,11 +89,81 @@
             color: $accent-color;
         }
     }
-      
+    
+    .site-nav__link {
+        font-size: 40px;
+        line-height: 47px;
+    }
+    .site-nav__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    .site-nav__item:last-child {
+        margin-bottom: 302px;
+    }
+    .header-contacts__icon {
+        display: none;
+    }
+    .header-contacts__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    .header-contacts__item:last-child {
+        margin-bottom: 64px;
+    }
+    .header-contacts__item:not(:last-child) > .header-contacts__link {
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        color: $accent-color;
+        
+            &:hover,
+            &:focus {
+                color: $second-color;
+            }
+    }
+    .header-contacts__item:last-child>.header-contacts__link {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+    }
+    .social-names__item {
+        list-style: none;
+    }
+    .social-names__item:not(:last-child) {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2)
+    }
+    .social-names__item:not(:first-child) {
+        padding-left: 10px;
+    }
+    .social-names {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+
+    
+    .social-names__link {
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 18px; 
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: $accent-color;
+
+        &:hover, &:focus {
+            color: $nav-color;
+        }
+    }
+    
+
 }
 
 @media screen and (min-width: $tablet) {
     .menu__open, .menu__close {
+        display: none;
+    }
+    .social-names {
         display: none;
     }
 }
