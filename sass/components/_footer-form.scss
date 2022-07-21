@@ -49,6 +49,15 @@
         margin-left: 10px;
         fill: currentColor;
     }
+
+}@media screen and (min-width: $tablet) {
+    .footer-form__input {
+        width: 450px;
+    }
+    .slogan {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (min-width: $desktop) {
