@@ -179,6 +179,7 @@ img {
   .menu {
     position: relative;
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: #FFFFFF;
@@ -1588,6 +1589,11 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 528px;
   }
   .modal__text {
