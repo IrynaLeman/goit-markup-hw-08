@@ -36,11 +36,16 @@
 
 .nets {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
-    padding-left: 122px;
-    padding-right: 122px;
+    padding-left: auto;
+    padding-right: auto;
     margin-bottom: 30px;
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+    
     
 }
 
