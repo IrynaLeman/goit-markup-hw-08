@@ -2060,8 +2060,8 @@ img {
   max-width: 450px;
 }
 
-.card__thumb > img {
-  width: 450px;
+.card__thumb > picture {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2102,7 +2102,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 97px 24px;
+  padding: 77px 24px;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -2147,7 +2147,7 @@ img {
   .card__thumb {
     max-width: 354px;
   }
-  .card__thumb > img {
+  .card__thumb > picture {
     max-width: 354px;
   }
   .card__text {
@@ -2179,7 +2179,7 @@ img {
   .card__thumb {
     max-width: 370px;
   }
-  .card__thumb > img {
+  .card__thumb > picture {
     max-width: 370px;
   }
   .card__text {
