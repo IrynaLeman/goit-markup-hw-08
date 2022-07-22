@@ -19,14 +19,12 @@
 }
 
 .modal {
-    position: absolute;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    top: 93px;
+    left: 15px;
+    
     padding: 40px;
-    width: 450px;
+    width: 90%;
     background-color: $white-color;
 }
 
@@ -66,7 +64,25 @@
     letter-spacing: 0.03em;
     color: $nav-color;
 }
+@media screen and (min-width: $mobile) {
+    .modal {
+        position: absolute;
+            top: 93px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 450px;
+    }
+}
 
+@media screen and (min-width: $tablet) {
+    .modal {
+        position: absolute;
+        top: 208px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 450px;
+    }
+}
 @media screen and (min-width: $desktop) {
     .modal {
         width: 528px;

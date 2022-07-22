@@ -287,6 +287,12 @@ img {
     font-size: 14px;
   }
   .header-contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 12px;
   }
   .header-contacts__icon {
@@ -1511,14 +1517,11 @@ img {
 }
 
 .modal {
-  position: absolute;
   position: relative;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 93px;
+  left: 15px;
   padding: 40px;
-  width: 450px;
+  width: 90%;
   background-color: #FFFFFF;
 }
 
@@ -1563,6 +1566,26 @@ img {
   color: #212121;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    top: 93px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 208px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;

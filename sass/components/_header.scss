@@ -171,12 +171,16 @@
         display: none;
     }
     .site-nav__link {
+        
         font-size: 14px;
     }
     .header-contacts__link {
+        display: flex;
+            align-items: center;
         font-size: 12px;
     }
     .header-contacts__icon {
+        
         margin-right: 8px;
     }
     .header-contacts__icon--tel {
