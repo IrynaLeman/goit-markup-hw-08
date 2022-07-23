@@ -2145,7 +2145,7 @@ img {
     margin-bottom: 30px;
   }
   .card__thumb {
-    max-width: 354px;
+    width: 354px;
   }
   .card__thumb > picture {
     max-width: 354px;
@@ -2165,6 +2165,14 @@ img {
     margin-bottom: -30px;
   }
   .cards__item:first-child > .card__link > .card__bottom {
+    padding-bottom: 56px;
+  }
+  .card__bottom:first-child {
+    padding-bottom: 56px;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1199px) {
+  .card__bottom:first-child {
     padding-bottom: 56px;
   }
 }
