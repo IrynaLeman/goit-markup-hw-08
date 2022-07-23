@@ -2176,11 +2176,22 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
   }
+  .card__link {
+    width: 370px;
+  }
   .card__thumb {
-    max-width: 370px;
+    width: 370px;
+  }
+  .card__thumb img {
+    width: 370px;
   }
   .card__thumb > picture {
-    max-width: 370px;
+    width: 370px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .card__thumb > picture > img {
+    width: 370px;
   }
   .card__text {
     width: 100%;
