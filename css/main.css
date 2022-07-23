@@ -2126,6 +2126,16 @@ img {
     margin-top: 15px;
   }
 }
+@media screen and (max-width: 410px) {
+  .card__text {
+    padding: 10px 24px 10px 24px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .card__text {
+    font-size: 15px;
+  }
+}
 @media screen and (min-width: 768px) {
   .filter {
     display: -webkit-box;
