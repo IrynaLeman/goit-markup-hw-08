@@ -2121,6 +2121,11 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 390px) {
+  .filter__item:nth-child(n+3) {
+    margin-top: 15px;
+  }
+}
 @media screen and (min-width: 768px) {
   .filter {
     display: -webkit-box;
