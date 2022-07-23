@@ -124,6 +124,13 @@
         padding-left: 20px;
     }
 }
+@media screen and (max-width: $mobile) {
+    .agreement__link {
+        display: block;
+        padding-top: 5px;
+        padding-left: 25px;
+    }
+}
 
 @media screen and (min-width: $desktop) {
     .agreement {

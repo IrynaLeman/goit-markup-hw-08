@@ -1828,6 +1828,13 @@ img {
   padding-left: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .agreement__link {
+    display: block;
+    padding-top: 5px;
+    padding-left: 25px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .agreement {
     margin-left: auto;
