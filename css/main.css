@@ -2164,19 +2164,14 @@ img {
     margin-right: -30px;
     margin-bottom: -30px;
   }
-  .cards__item:first-child > .card__link > .card__bottom {
-    padding-bottom: 56px;
-  }
-  .card__bottom:first-child {
-    padding-bottom: 56px;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 1199px) {
-  .card__bottom:first-child {
+  .card__bottom--first {
     padding-bottom: 56px;
   }
 }
 @media screen and (min-width: 1200px) {
+  .card__bottom--first {
+    padding-bottom: 20px;
+  }
   .cards__item {
     width: 370px;
     -ms-flex-preferred-size: calc(33.3333333333% - 30px);

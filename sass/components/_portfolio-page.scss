@@ -109,6 +109,7 @@
 }
 
 @media screen and (min-width: $tablet) {
+  
     .filter {
         display: flex;
         justify-content: center;
@@ -149,20 +150,16 @@
         margin-bottom: -30px;
     }
        
-    .cards__item:first-child>.card__link>.card__bottom {
+    .card__bottom--first {
         padding-bottom: 56px;
     }
-        .card__bottom:first-child {
-            padding-bottom: 56px;}
-}
-@media screen and (min-width: $desktop) and (max-width: 1199px) {
     
-    .card__bottom:first-child {
-        padding-bottom: 56px;
 }
-}
+
 @media screen and (min-width: $desktop) {
-    
+    .card__bottom--first {
+            padding-bottom: 20px;
+    }
     .cards__item {
         width: 370px;
         flex-basis: calc((100%/3) - 30px);
