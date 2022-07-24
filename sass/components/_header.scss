@@ -62,12 +62,17 @@
     }
     .menu {
         position: relative;
-        position: absolute;
+        position: fixed;
         z-index: 1;
         top: 0;
         left: 0;
+
+        display: flex;
+        flex-direction: column;
+
         background-color: $white-color;
         width: 100%;
+        height: 100%;
         padding: 48px 40px;
     }
     .menu__open, .menu__close {
@@ -79,8 +84,7 @@
         outline: none;
         color: $nav-color;
         background-color: $white-color;
-        transition: color $time $timing;
-        
+        transition: color $time $timing;        
         }
     .menu__open:focus, .menu__open:hover, .menu__close:focus, .menu__close:hover {
         color: $accent-color;
@@ -102,10 +106,11 @@
     .site-nav__item:not(:last-child) {
         margin-bottom: 32px;
     }
-    .site-nav__item:last-child {
-        margin-bottom: 302px;
+    .header-contacts {
+        margin-top: auto;
     }
-    .header-contacts__icon {
+
+    .header-contacts__icon {    
         display: none;
     }
     .header-contacts__item:not(:last-child) {
