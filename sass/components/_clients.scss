@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
-    height: 92px;
+    /*width: 210px;
+    height: 92px;*/
     border: 1px solid $nets-color;
     border-color: $nets-color;
     border-radius: 4px;
@@ -36,9 +36,19 @@
 .clients__item:last-child {
     margin-bottom: 0px;
 }
+@media screen and (max-width: 479px) {
+    .clients__item {
+        width: calc(50% - 15px);
+    } 
+}
+
 @media screen and (min-width: $mobile) {
     .clients__item:nth-last-child(-n+2) {
         margin-bottom: 0px;
+    }
+    .clients__link {
+        width: 210px;
+        height: 92px;
     }
 }
 @media screen and (min-width: $tablet) {

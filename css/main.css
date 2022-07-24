@@ -987,8 +987,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 210px;
-  height: 92px;
+  /*width: 210px;
+  height: 92px;*/
   border: 1px solid #AFB1B8;
   border-color: #AFB1B8;
   border-radius: 4px;
@@ -1025,9 +1025,18 @@ img {
   margin-bottom: 0px;
 }
 
+@media screen and (max-width: 479px) {
+  .clients__item {
+    width: calc(50% - 15px);
+  }
+}
 @media screen and (min-width: 480px) {
   .clients__item:nth-last-child(-n+2) {
     margin-bottom: 0px;
+  }
+  .clients__link {
+    width: 210px;
+    height: 92px;
   }
 }
 @media screen and (min-width: 768px) {
